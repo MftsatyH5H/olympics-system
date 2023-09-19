@@ -1,0 +1,256 @@
+<div class="container-fluid">
+    <div class="row p-2">
+        <div class="col-10">
+            <p class="fs-5 fw-bold mt-3">Venues</p>
+        </div>
+        <div class="col-2">
+            <button type="button" class="btn btn-info m-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add Venue</button>
+        </div>
+        <div class="row participant-list-header p-3 m-1">
+            <div class="col-2">
+                Name
+            </div>
+            <div class="col-2">
+                City
+            </div>
+            <div class="col-2">
+                State
+            </div>
+            <div class="col-1">
+                Zip
+            </div>
+            <div class="col-2">
+                Country
+            </div>
+            <div class="col-1">
+                Fields
+            </div>
+            <div class="col-1">
+                Organization
+            </div>
+        </div>
+        <div *ngFor="let Venue of venuesList " class="row participant p-3 m-1">
+            <div class="col-2">
+                {{Venue.name}}
+            </div>
+            <div class="col-2">
+                {{Venue.city}}
+            </div>
+            <div class="col-2">
+                {{Venue.state}}
+            </div>
+            <div class="col-1">
+                {{Venue.zip}}
+            </div>
+            <div class="col-2">
+                {{Venue.country}}
+            </div>
+            <div class="col-1">
+                {{Venue.fields}}
+            </div>
+            <div class="col-1">
+                {{Venue.organization}}
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+<div class="modal fade modal-xl" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">New Organization Venue</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    Name:
+                </div>
+                <div class="col-12">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-6">
+                    Address:
+                </div>
+                <div class="col-6">
+                    Address:
+                </div>
+                <div class="col-6">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-6">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-6">
+                    City:
+                </div>
+                <div class="col-6">
+                    State / Providence:
+                </div>
+                <div class="col-6">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-6">
+                    <select class="form-select" >
+                        <option selected></option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    Postal Code:
+                </div>
+                <div class="col-6">
+                    Country:
+                </div>
+                <div class="col-6">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-6">
+                    <select class="form-select" >
+                        <option selected></option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    Mobile Phone Number:
+                </div>
+                <div class="col-6">
+                    Mobile Phone Number:
+                </div>
+                <div class="col-6">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-6">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-12">
+                    Time Zone Name:
+                </div>
+                <div class="col-12">
+                    <select class="form-select" >
+                        <option selected></option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    Latitude:
+                </div>
+                <div class="col-6">
+                    Longitude:
+                </div>
+                <div class="col-6">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-6">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-12">
+                    Logo:
+                </div>
+                <div class="col-12 mt-2">
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="col-12">
+                    Public Map:
+                </div>
+                <div class="col-12 mt-2">
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="col-12">
+                    Blueprint:
+                </div>
+                <div class="col-12 mt-2">
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="col-12">
+                    Evaluation Report:
+                </div>
+                <div class="col-12 mt-2 mb-4">
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="col-2">
+                </div>
+                <div class="col-5">
+                    Opening Time
+                </div>
+                <div class="col-5">
+                    Closing Time
+                </div>
+                <div class="col-2 mb-2">
+                    Monday
+                </div>
+                <div class="col-5 mb-2">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-5 mb-2">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-2 mb-2" >
+                    Tuesday
+                </div>
+                <div class="col-5 mb-2">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-5 mb-2">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-2 mb-2">
+                    Wednesday
+                </div>
+                <div class="col-5 mb-2">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-5 mb-2">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-2 mb-2">
+                    Thursday
+                </div>
+                <div class="col-5 mb-2">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-5 mb-2">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-2 mb-2">
+                    Friday
+                </div>
+                <div class="col-5 mb-2">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-5 mb-2">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-2 mb-2">
+                    Saturday
+                </div>
+                <div class="col-5 mb-2">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-5 mb-2">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-2 mb-2">
+                    Sunday
+                </div>
+                <div class="col-5 mb-2">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-5 mb-2">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+                <div class="col-12">
+                    API ID:
+                </div>
+                <div class="col-6 mt-2">
+                    <input class="form-control" type="text" id="formFile">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-info">Create Organization Venue</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

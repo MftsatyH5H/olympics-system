@@ -1,0 +1,82 @@
+<div class="container-fluid">
+    <div class="row p-2">
+        <div class="col-10">
+            <p class="fs-5 fw-bold mt-3">2024 African Games Shootout Registration</p>
+        </div>
+        <div class="col-2">
+            <button type="button" class="btn btn-info m-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">New Form Element</button>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div style="background-color: #0b5929; color: white;" class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">2024 African Games Shootout Registration</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-12 m-2">
+                            <p>Label:</p>
+                            <textarea class="form-control" rows="5"></textarea>
+                        </div>
+                        <div class="col-12 m-2">
+                            <p>Type:</p>
+                            <select class="form-select" >
+                                <option selected></option>
+                            </select>
+                        </div>
+                        <div class="col-12 m-2">
+                            <p>Available Values (One per Line)</p>
+                            <textarea class="form-control" rows="7">
+Twitter
+Facebook
+Word of Mouth
+Google
+Played Last Year
+                            </textarea>
+                        </div>
+                        <div class="col-12 m-2">
+                            <p>Page:</p>
+                            <select class="form-select" >
+                                <option selected>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <div class="col-12 m-2">
+                            <p>Answer to Trigger Review Value:</p>
+                            <select class="form-select" >
+                                <option selected></option>
+                            </select>
+                        </div>
+                        <div *ngFor="let item of checkboxArray" class="col-12">
+                            <input type="checkbox" class="form-check-input">
+                            {{item}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 mt-2">
+                    <p>Preview:</p>
+                    <p>How did you hear about our event?</p>
+                    <select class="form-select" >
+                        <option selected>Twitter</option>
+                        <option>Facebook</option>
+                        <option>Word of Mouth</option>
+                        <option>Google</option>
+                        <option>Played Last Year</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-info">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>

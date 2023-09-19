@@ -1,0 +1,87 @@
+<div class="container-fluid">
+    <div class="row p-2">
+        <div class="col-10">
+            <button type="button" class="btn btn-info m-1">Add Individual</button>
+            <button type="button" class="btn btn-success m-1">Add Group</button>
+        </div>
+        <div class="col-2">
+            <button type="button" class="btn btn-outline-success m-2">.</button>
+            <button type="button" class="btn btn-outline-info m-2">.</button>
+            <button type="button" class="btn btn-outline-danger m-2">.</button>
+        </div>
+            <div class="row participant-list-header p-3 m-1">
+                <div class="col-1">
+                    <input type="checkbox">
+                </div>
+                <div class="col-1">
+                    #ACR
+                </div>
+                <div class="col-1">
+                    Family Name
+                </div>
+                <div class="col-1">
+                    Given Name
+                </div>
+                <div class="col-1">
+                    Name on pass
+                </div>
+                <div class="col-1">
+                    Organization
+                </div>
+                <div class="col-1">
+                    Category
+                </div>
+                <div class="col-1">
+                    Function
+                </div>
+                <div class="col-1">
+                    Documentation
+                </div>
+                <div class="col-1">
+                    Participant Status
+                </div>
+                <div class="col-1">
+                    Game
+                </div>
+            </div>
+            
+            <div routerLink="/edit" *ngFor="let participant of participants " class="row participant p-2 m-1">
+                <div class="col-1">
+                    <input type="checkbox">
+                </div>
+                <div class="col-1">
+                    {{participant.Acr}}
+                </div>
+                <div class="col-1">
+                    {{participant.familyName}} 
+                </div>
+                <div class="col-1">
+                    {{participant.givenName}}
+                </div>
+                <div class="col-1">
+                    {{participant.nameOnPass}}
+                </div>
+                <div class="col-1">
+                    {{participant.organization}}
+                </div>
+                <div class="col-1">
+                    {{participant.category}}
+                </div>
+                <div class="col-1">
+                    {{participant.function}}
+                </div>
+                <div class="col-1">
+                    {{participant.documentation}}
+                </div>
+                <div class="col-1">
+                    {{participant.participantStatus}}
+                </div>
+                <div class="col-1">
+                    {{participant.game}}
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-outline-danger">Delete</button>
+                </div>
+            </div>
+    </div>
+</div>

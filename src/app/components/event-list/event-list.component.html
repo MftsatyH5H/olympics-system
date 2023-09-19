@@ -1,0 +1,207 @@
+<div class="container-fluid">
+    <div class="row p-2">
+        <div class="col-10">
+
+        </div>
+        <div class="col-2">
+            <button class="btn btn-info m-1 " data-bs-toggle="modal" data-bs-target="#staticBackdrop">New Event</button>
+        </div>
+            <div class="row participant-list-header p-3 m-1">
+                <div class="col-1">
+                    <input type="checkbox">
+                </div>
+                <div class="col-1">
+                    Event Name
+                </div>
+                <div class="col-1">
+                    Type
+                </div>
+                <div class="col-1">
+                    Sport
+                </div>
+                <div class="col-1">
+                    Start Date
+                </div>
+                <div class="col-1">
+                    End Date
+                </div>
+                <div class="col-1">
+                    Divisions
+                </div>
+                <div class="col-1">
+                    Schedule
+                </div>
+                <div class="col-1">
+                    Form
+                </div>
+                <div class="col-1">
+                    Teams
+                </div>
+                <div class="col-1">
+                    Clubs
+                </div>
+            </div>
+            <div routerLink="/edit" *ngFor="let event of events " class="row participant p-2 m-1">
+                <div class="col-1">
+                    <input type="checkbox">
+                </div>
+                <div class="col-1">
+                    {{event.eventName}}
+                </div>
+                <div class="col-1">
+                    {{event.type}} 
+                </div>
+                <div class="col-1">
+                    {{event.sport}}
+                </div>
+                <div class="col-1">
+                    {{event.startDate}}
+                </div>
+                <div class="col-1">
+                    {{event.endDate}}
+                </div>
+                <div class="col-1">
+                    {{event.divisions}}
+                </div>
+                <div class="col-1">
+                    {{event.schedule}}
+                </div>
+                <div class="col-1">
+                    {{event.form}}
+                </div>
+                <div class="col-1">
+                    {{event.teams}}
+                </div>
+                <div class="col-1">
+                    {{event.clubs}}
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-outline-danger">Delete</button>
+                </div>
+            </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">New Event</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6">
+                Name:
+            </div>
+            <div class="col-6">
+                Competition:
+            </div>
+            <div class="col-6">
+                <input class="form-control" type="text">
+            </div>
+            <div class="col-6">
+                <select class="form-select" >
+                    <option selected></option>
+                </select>
+            </div>
+            <div class="col-6">
+                Start Date:
+            </div>
+            <div class="col-6">
+                End Date:
+            </div>
+            <div class="col-6">
+                <input class="form-control" type="date">
+            </div>
+            <div class="col-6">
+                <input class="form-control" type="date">
+            </div>
+            <div class="col-6">
+                Seasonal Year:
+            </div>
+            <div class="col-6">
+                Age Method:
+            </div>
+            <div class="col-6">
+                <select class="form-select" >
+                    <option selected></option>
+                </select>
+            </div>
+            <div class="col-6">
+                <select class="form-select" >
+                    <option selected></option>
+                </select>
+            </div>
+            <div class="col-6">
+                Affiliation:
+            </div>
+            <div class="col-6">
+                Website URL:
+            </div>
+            <div class="col-6">
+                <select class="form-select" >
+                    <option selected></option>
+                </select>
+            </div>
+            <div class="col-6">
+                <input class="form-control" type="text">
+            </div>
+            <div class="col-6">
+                Accounting Code:
+            </div>
+            <div class="col-6">
+            </div>
+            <div class="col-6">
+                <input class="form-control" type="text">
+            </div>
+            <hr>
+            <h5 class="modal-title" id="staticBackdropLabel">Event Location</h5>
+            <div class="col-12">
+                Venue Name:
+            </div>
+            <div class="col-12">
+                <input class="form-control" type="text">
+            </div>
+            <div class="col-6">
+                City:
+            </div>
+            <div class="col-6">
+                State / Province
+            </div>
+            <div class="col-6">
+                <select class="form-select" >
+                    <option selected></option>
+                </select>
+            </div>
+            <div class="col-6">
+                <select class="form-select" >
+                    <option selected></option>
+                </select>
+            </div>
+            <div class="col-6">
+                Postal Code:
+            </div>
+            <div class="col-6">
+                Country:
+            </div>
+            <div class="col-6">
+                <input class="form-control" type="text">
+            </div>
+            <div class="col-6">
+                <select class="form-select" >
+                    <option selected></option>
+                </select>
+            </div>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            
+    </div>
+</div>
+

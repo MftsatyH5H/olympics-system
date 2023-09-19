@@ -1,0 +1,101 @@
+<div class="container-fluid">
+    <div class="row p-2">
+        <div class="col-10">
+            <p class="fs-5 fw-bold mt-3">Fields</p>
+        </div>
+        <div class="col-2">
+            <button type="button" class="btn btn-info m-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add Field</button>
+        </div>
+    <div class="row list-header p-3 m-1">
+        <div class="col-1">
+        </div>
+        <div class="col">
+            Name
+        </div>
+        <div class="col">
+            Surface
+        </div>
+        <div class="col">
+            Capacity
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">New Field</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+            <div class="col-12">
+                Portioned Form:
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-12">
+                Prep Time:
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-12">
+                Name:
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-12">
+                Surface:
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-12">
+                Capacity:
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-12">
+                Condition:
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-12">
+                Pitch Type:
+            </div>
+            <div class="col-6">
+                <select class="form-select">
+                    <option selected></option>
+                </select>
+            </div>
+            <div class="col-6">
+                <input class="form-control" type="text">
+            </div>
+            <div class="col-6 mb-2">
+                Details:
+            </div>
+            <div class="col-6 mb-2">
+                Sports Type:
+            </div>
+                <div class="col-6 mb-2" *ngFor="let item of fieldsArray">
+                    <input type="checkbox" class="form-check-input">
+                    {{ item }}
+                </div>
+            <div class="col-12">
+                Notes:
+                <textarea class="form-control" rows="5"></textarea>
+            </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>

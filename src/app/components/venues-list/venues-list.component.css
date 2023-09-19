@@ -5,4 +5,9 @@
 }
 .participant{
     border-bottom: 1px solid black;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.participant:hover{
+    background-color: rgb(219, 217, 217);
 }
