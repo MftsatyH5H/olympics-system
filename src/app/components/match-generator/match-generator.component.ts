@@ -42,5 +42,32 @@ export class MatchGeneratorComponent {
       description: 'One bracket, where the top two tears play a final'
     }
   ]
-  
+  teams :{name:string; count:number; fDate:string; lDate:string}[]= [{
+    name:"None",
+    count:0,
+    fDate:"None",
+    lDate:"None"
+  }]
+  playoffs: {name:string, description:string}[] =[
+    {
+      name: '1 Bracket - Final Only',
+      description: 'One bracket where the top two tears play a final'
+    }
+  ]
+  addTeam(){
+    this.teams.push({
+      name:"None",
+    count:0,
+    fDate:"None",
+    lDate:"None"
+    })
+  }
+  addPlayOff(name:string, desc:string){
+    this.playoffs.push(
+      {
+        name:name,
+        description:desc
+      }
+    )
+  }
 }

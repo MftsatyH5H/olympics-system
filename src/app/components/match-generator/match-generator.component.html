@@ -36,14 +36,34 @@
                         <th scope="col">Last Date</th>
                       </tr>
                     </thead>
+                    <tbody>
+                        <tr *ngFor="let i of teams" >
+                            <td>{{i.name}}</td>
+                            <td>{{i.count}}</td>
+                            <td>{{i.fDate}}</td>
+                            <td>{{i.lDate}}</td>
+                        </tr>
+                    </tbody>
                   </table>
             </div>
+            <hr>
             <div class="col-10">
                 <span class="fs-6 fw-bold">Playoffs</span>
             </div>
             <div class="col-2">
                 <button data-bs-toggle="modal" data-bs-target="#Template" class="btn btn-info">Add PlayOff</button>
             </div>
+            <div *ngFor="let item of playoffs" class="row m-3">
+                <div class="col-8">
+                    <p class="fs-6">{{item.name}}</p>
+                    <p class="fs-6">{{item.description}}</p>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-info m-2">Create Matches</button>
+                    <button class="btn btn-info m-2">Remove PlayOffs</button>
+                </div>
+            </div>
+            
         </div>
     </div>
 </div>
@@ -57,7 +77,7 @@
         </div>
         <div class="modal-body">
           <div class="row">
-            <div style="cursor: pointer;" *ngFor="let item of templateArray" class="col-12">
+            <div style="cursor: pointer;" data-bs-dismiss="modal" aria-label="Close" (click)="addTeam()" *ngFor="let item of templateArray" class="col-12">
                 <span class="fs-6">{{item}}</span>
                 <hr>
             </div>
@@ -76,7 +96,7 @@
         </div>
         <div class="modal-body">
           <div class="row">
-            <div style="cursor: pointer;" *ngFor="let item of matchTemplateArray" class="col-12">
+            <div style="cursor: pointer;" data-bs-dismiss="modal" aria-label="Close" *ngFor="let item of matchTemplateArray" (click)="addPlayOff(item.name,item.description)" class="col-12">
                 <p class="fs-5 fw-bold">{{item.name}}</p>
                 <p class="fs-6">{{item.description}}</p>
                 <hr>
