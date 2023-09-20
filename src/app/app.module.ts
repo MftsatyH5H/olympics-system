@@ -14,6 +14,7 @@ import { FieldsListComponent } from './components/fields-list/fields-list.compon
 import { RegistrationListComponent } from './components/registration-list/registration-list.component';
 import { GroupPlayTemplateComponent } from './components/group-play-template/group-play-template.component';
 import { TournamentComponent } from './components/tournament/tournament.component';
+import { MatchGeneratorComponent } from './components/match-generator/match-generator.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { TournamentComponent } from './components/tournament/tournament.componen
     RegistrationListComponent,
     GroupPlayTemplateComponent,
     TournamentComponent,
+    MatchGeneratorComponent,
   ],
   imports: [
     BrowserModule,
