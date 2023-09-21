@@ -15,6 +15,9 @@ import { RegistrationListComponent } from './components/registration-list/regist
 import { GroupPlayTemplateComponent } from './components/group-play-template/group-play-template.component';
 import { TournamentComponent } from './components/tournament/tournament.component';
 import { MatchGeneratorComponent } from './components/match-generator/match-generator.component';
+import { PlayOffsComponent } from './components/play-offs/play-offs.component';
+import { FormsModule } from '@angular/forms';
+import { PlayOffTiersComponent } from './components/play-off-tiers/play-off-tiers.component';
 
 @NgModule({
   declarations: [
@@ -31,8 +34,11 @@ import { MatchGeneratorComponent } from './components/match-generator/match-gene
     GroupPlayTemplateComponent,
     TournamentComponent,
     MatchGeneratorComponent,
+    PlayOffsComponent,
+    PlayOffTiersComponent,
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule
   ],

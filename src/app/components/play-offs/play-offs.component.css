@@ -1,0 +1,10 @@
+.list-header{
+    background-color: #0b5929;
+    color: white;
+    border-radius: 5px;
+}
+.list-item{
+    border-bottom: 1px solid black;
+    background-color: whitesmoke;
+    transition: 0.25s;
+}
