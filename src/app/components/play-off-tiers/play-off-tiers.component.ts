@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./play-off-tiers.component.css']
 })
 export class PlayOffTiersComponent {
-
+  tierType:string = ""
+  team1:string = ""
+  team2:string = ""
+  matchesArray:{type:string, team1:string,team2:string}[] = []
 }

@@ -1,1 +1,172 @@
-<p>play-off-tiers works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div class="col-12 mt-2">
+                    <p class="fs-6 ">Name:</p>
+                </div>
+                <div class="col-12">
+                    <input id="name-input" type="text" value="" class="form-control">
+                </div>
+                <div class="col-12 mt-4">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <span class="fs-6 m-2">Valid Tournament</span>
+                </div>
+                <div class="col-12 mt-4">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <span class="fs-6 m-2">Valid League</span>
+                </div>
+                <div class="col-6 m-4">
+                    <button class="btn btn-info m-1" data-bs-dismiss="modal" >Create Playoff Format</button>
+                    <button class="btn btn-info m-1" >Copy</button>
+                    <button class="btn btn-outline-danger m-1" >Delete</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-6">
+            <p class="fs-6 m-2">Description</p>
+            <textarea class="form-control" id="description-input" rows="5"></textarea>
+        </div>
+      </div>
+      <hr>
+      <div class="row ">
+        <div class="col-1">
+            <p class="fs-6 fw-bold">G</p>
+            <p class="fs-6 fw-bold">R</p>
+            <p class="fs-6 fw-bold">O</p>
+            <p class="fs-6 fw-bold">U</p>
+            <p class="fs-6 fw-bold">P</p>
+            <p class="fs-6 fw-bold">P</p>
+            <p class="fs-6 fw-bold">L</p>
+            <p class="fs-6 fw-bold">A</p>
+            <p class="fs-6 fw-bold">Y</p>
+        </div>
+        <div class="col-3">
+            <div class="match">
+                <p class="fs-6 fw-bold">Semi Finals A</p>
+                <p class="fs-6 "><span style="color: #0b3cff;">Home </span>Bracket A #1</p>
+                <p class="fs-6 "><span style="color: green;">Away </span>Bracket A #2</p>
+            </div>
+            <hr>
+            <div class="match">
+                <p class="fs-6 fw-bold">Semi Finals B</p>
+                <p class="fs-6 "><span style="color: #0b3cff;">Home </span>Bracket B #1</p>
+                <p class="fs-6 "><span style="color: green;">Away </span>Bracket B #2</p>
+            </div>
+            <button class="btn btn-info m-1" data-bs-toggle="modal" data-bs-target="#newMatch">New Match</button>
+        </div>
+        <div class="col-1 mt-5">
+            <br>
+            <br>
+            <br>
+            <button class="btn btn-info mt-5" data-bs-toggle="modal" data-bs-target="#newTier">New Tier</button>
+        </div>
+      </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="newTier" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div style="background-color: #0b5929; color: white;" class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Select Template</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-12 ">
+                    <p class="fs-6">Type:</p>
+                </div>
+                <div class="col-12">
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-12 ">
+                    <p class="fs-6">Home Team Selection:</p>
+                </div>
+                <div class="col-8">
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-4">
+                    <select class="form-select" >
+                        <option selected>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div class="col-12 ">
+                    <p class="fs-6">Away Team Selection:</p>
+                </div>
+                <div class="col-8">
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-4">
+                    <select class="form-select" >
+                        <option selected>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div class="col-4 mt-4">
+                    <button class="btn btn-info">Create PlayOff Element</button>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="newMatch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div style="background-color: #0b5929; color: white;" class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Select Template</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-12 ">
+                    <p class="fs-6">Type:</p>
+                </div>
+                <div class="col-12">
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-12 ">
+                    <p class="fs-6">Home Team Selection:</p>
+                </div>
+                <div class="col-6">
+                    <select class="form-select" >
+                        <option selected>Winner</option>
+                        <option>Loser</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <select class="form-select" >
+                        <option selected>Semi Finals A</option>
+                    </select>
+                </div>
+                <div class="col-12 ">
+                    <p class="fs-6">Away Team Selection:</p>
+                </div>
+                <div class="col-6">
+                    <select class="form-select" >
+                        <option selected>Winner</option>
+                        <option>Loser</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <select class="form-select" >
+                        <option selected>Semi Finals A</option>
+                    </select>
+                </div>
+                <hr>
+                <div class="col-4">
+                    <button class="btn btn-info">Create PlayOff Element</button>
+                </div>
+                
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
