@@ -18,6 +18,8 @@ import { MatchGeneratorComponent } from './components/match-generator/match-gene
 import { PlayOffsComponent } from './components/play-offs/play-offs.component';
 import { FormsModule } from '@angular/forms';
 import { PlayOffTiersComponent } from './components/play-off-tiers/play-off-tiers.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { ProfileIdComponent } from './components/profile-id/profile-id.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { PlayOffTiersComponent } from './components/play-off-tiers/play-off-tier
     MatchGeneratorComponent,
     PlayOffsComponent,
     PlayOffTiersComponent,
+    ProfileComponent,
+    ProfileIdComponent,
   ],
   imports: [
     FormsModule,
